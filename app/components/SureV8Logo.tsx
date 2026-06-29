@@ -1,52 +1,61 @@
 export default function SureV8Logo() {
   return (
     <svg
-      width="140"
+      width="180"
       height="50"
-      viewBox="0 0 140 50"
+      viewBox="0 0 180 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="hover:opacity-80 transition"
     >
-      {/* Tall V for Vetting */}
-      <path
-        d="M 10 8 L 25 45 L 35 8 M 10 8 L 35 8 M 10 8 L 25 45"
-        stroke="#2563EB"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-
-      {/* Text "Sure" */}
+      {/* "Sure" text */}
       <text
-        x="45"
-        y="38"
-        fontSize="20"
-        fontWeight="700"
+        x="0"
+        y="40"
+        fontSize="32"
+        fontWeight="bold"
         fill="#111827"
         fontFamily="system-ui, -apple-system, sans-serif"
       >
         Sure
       </text>
 
-      {/* Custom 8: Human Head (top) + 8 shape (bottom) */}
+      {/* Tall V */}
+      <path
+        d="M 82 8 L 100 42 L 118 8"
+        stroke="#2563EB"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+
+      {/* Custom 8: Human Head (top) + 8 (bottom) */}
       <g>
-        {/* Human Head - top circle/oval */}
-        <circle cx="115" cy="15" r="6.5" fill="#2563EB" />
+        {/* Human Head Silhouette - top part */}
+        <circle cx="150" cy="16" r="5.5" fill="#2563EB" />
+        {/* Head shoulders/neck area */}
+        <path
+          d="M 145 21 Q 150 23 155 21"
+          stroke="#2563EB"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+        />
 
-        {/* Head details - eyes */}
-        <circle cx="112" cy="14" r="1.2" fill="white" />
-        <circle cx="118" cy="14" r="1.2" fill="white" />
+        {/* 8 shape - lower oval (bottom of 8) */}
+        <ellipse
+          cx="150"
+          cy="33"
+          rx="6.5"
+          ry="8"
+          fill="none"
+          stroke="#2563EB"
+          strokeWidth="2.5"
+        />
 
-        {/* 8 shape - lower oval */}
-        <ellipse cx="115" cy="33" rx="7" ry="9" fill="none" stroke="#2563EB" strokeWidth="2.5" />
-
-        {/* 8 shape - upper oval (connected) */}
-        <ellipse cx="115" cy="22" rx="7" ry="8" fill="none" stroke="#2563EB" strokeWidth="2.5" />
-
-        {/* Connecting line between head and 8 */}
-        <line x1="115" y1="21.5" x2="115" y2="22" stroke="#2563EB" strokeWidth="2.5" />
+        {/* Connect head to 8 */}
+        <line x1="150" y1="21.5" x2="150" y2="25" stroke="#2563EB" strokeWidth="2.5" />
       </g>
     </svg>
   )
