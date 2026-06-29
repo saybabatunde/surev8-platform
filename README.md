@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SureV8 Platform
+
+A marketplace platform for finding, verifying, and connecting with trusted service providers through video verification and real reviews.
+
+## Features
+
+- 🔍 **Find Providers** - Browse service providers in your area
+- ✅ **Video Verification** - See real work and credentials through video calls
+- ⭐ **Reviews & Ratings** - Real feedback from verified customers
+- 👤 **Dual Roles** - Register as Customer or Service Provider
+- 🛡️ **Safe & Secure** - Verified profiles and secure messaging
+
+## Tech Stack
+
+- **Frontend:** Next.js 14, React, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **Database:** Supabase (PostgreSQL)
+- **Authentication:** Supabase Auth
+- **Deployment:** Vercel
 
 ## Getting Started
 
