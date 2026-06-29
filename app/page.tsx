@@ -1,4 +1,5 @@
 import RegistrationForm from './components/RegistrationForm'
+import SureV8Logo from './components/SureV8Logo'
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-3xl font-bold text-blue-600">SureV8</h1>
+            <SureV8Logo />
             <nav className="flex gap-6">
               <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 font-medium">
                 How It Works
