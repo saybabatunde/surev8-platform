@@ -30,20 +30,16 @@ export default function SureV8Logo() {
         fill="none"
       />
 
-      {/* Custom 8: Human Head (top) + 8 (bottom) */}
+      {/* Custom 8: Human Head (replaces upper oval) + O (lower oval) */}
       <g>
-        {/* Human Head Silhouette - top part */}
-        <circle cx="150" cy="16" r="5.5" fill="#2563EB" />
-        {/* Head shoulders/neck area */}
-        <path
-          d="M 145 21 Q 150 23 155 21"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="none"
-          strokeLinecap="round"
-        />
+        {/* Human Head - circle */}
+        <circle cx="150" cy="14" r="5" fill="#2563EB" />
 
-        {/* 8 shape - lower oval (bottom of 8) */}
+        {/* Head - simple eyes */}
+        <circle cx="148" cy="13" r="0.8" fill="white" />
+        <circle cx="152" cy="13" r="0.8" fill="white" />
+
+        {/* Lower oval of 8 - the O */}
         <ellipse
           cx="150"
           cy="33"
@@ -54,8 +50,8 @@ export default function SureV8Logo() {
           strokeWidth="2.5"
         />
 
-        {/* Connect head to 8 */}
-        <line x1="150" y1="21.5" x2="150" y2="25" stroke="#2563EB" strokeWidth="2.5" />
+        {/* Thin line connecting head to O */}
+        <line x1="150" y1="19" x2="150" y2="25" stroke="#2563EB" strokeWidth="1.5" />
       </g>
     </svg>
   )
